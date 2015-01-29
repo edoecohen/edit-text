@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Text</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-1 sidebar">
+			<h1>Acme, Inc.</h1>
+		</div>
+
+		<div class="col-sm-8">
+			<div class="main">
+				<make-editable>
+					<h1>Yo!</h1>
+					<p>This is a test</p>
+				</make-editable>
+
+				<make-editable>
+					<h1>About Us</h1>
+					<p>The Acme Corporation is a fictional corporation that features prominently in the Road Runner/Wile E. Coyote cartoons as a running gag featuring outlandish products that fail or backfire catastrophically at the worst possible times. The name is also used as a generic title in many cartoons, films, TV series and comics.</p>
+				</make-editable>
+
+				<make-editable>
+						<h1>Origin</h1>
+						<p>The name Acme became popular for businesses by the 1920s, when alphabetized business telephone directories such as the Yellow Pages began to be widespread. There were a flood of businesses named Acme (some of these still survive[1]). For example, early Sears catalogues contained a number of products with the "Acme" trademark, including anvils, which are frequently used in Warner Bros. cartoons.</p>
+				</make-editable>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
