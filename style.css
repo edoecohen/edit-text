@@ -5,11 +5,15 @@ body {
 	border-right: 1px solid #979797;
 	margin-top: 50px;
 	height: 88vh;
+	position: fixed;
 }
 
+.col-sm-8 {
+	float: right;
+}
 
 .main {
-	margin: 70px 0 0 80px;
+	margin: 60px 0 0 80px;
 	width: 500px;
 	color: #595959;
 }
@@ -22,9 +26,11 @@ body {
 	font-weight: 550;	
 }
 .main p { font-size: 15px; }
+.main article .save {opacity: 1}
 .main article:hover .actions {
 	opacity: 1;
 }
+
 .actions {
 	border-top: 1px solid #979797;
 	margin-top: 15px;
@@ -43,6 +49,9 @@ body {
 .actions button:hover {
 	color: #595959;;
 	background: #fafafa;
+}
+button:focus {
+	outline: none;
 }
 
 [contenteditable="true"]:focus { outline: 0px solid transparent; }

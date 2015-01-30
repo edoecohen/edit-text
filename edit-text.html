@@ -1,7 +1,12 @@
 <article>
-	<div class="text" contenteditable="true" ng-transclude>
+	<div class="text" ng-class="{edit: editable}" contenteditable="{{editable}}" ng-transclude>
 	</div>
-	<div class="actions">
-		<button>Edit</button>
+	
+	<div class="actions" ng-class="{save: editable}">
+	
+		<button ng-click="toggleEdit()">
+			<span ng-hide="editable">Edit</span>
+			<span ng-show="editable">Save</span>
+		</button>
 	</div>
 </article>
